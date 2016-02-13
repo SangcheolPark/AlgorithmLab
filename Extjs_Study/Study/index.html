@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<title>Hello World</title>
+	<link rel="stylesheet" type="text/css" href="/packages/ext-theme-crisp/build/resources/ext-theme-crisp-all.css"/>
+	<script type="text/javascript" src="/extjs/ext-all.js"></script>
+	<script type="text/javascript" src="/packages/ext-theme-crisp/build/ext-theme-crisp.js"></script>
+	<script type="text/javascript">
+		Ext.onReady(function(){
+			Ext.create('Ext.Viewport', {
+				layout : 'border',
+				items: [
+				        {
+				        	region : 'north',
+				        	border : true,
+				        	height : 130
+				        },{
+				        	region : 'west',
+				        	title : 'Menu',
+				        	collapsible: true,
+				        	border : true,
+				        	width : 250
+				        },{
+				        	region : 'center',
+				      
+				        	border : true
+				        },{
+				        	region : 'south',
+				        	height : 50 ,
+				        	border : true				        
+				        }
+				        ]
+			});
+			
+			Ext.Msg.alert('Title', 'Hello World');
+		});
+	
+	</script>
+	</head>
+<body>
+</body>
+</html>

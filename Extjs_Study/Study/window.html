@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<title>Hello World</title>
+	<link rel="stylesheet" type="text/css" href="/packages/ext-theme-crisp/build/resources/ext-theme-crisp-all.css"/>
+	<script type="text/javascript" src="extjs/ext-all.js"></script>
+	<script type="text/javascript" src="/packages/ext-theme-crisp/build/ext-theme-crisp.js"></script>
+	<script type="text/javascript">
+	
+		Ext.onReady(function() {
+			Ext.create("Ext.button.Button", {
+				text : '버튼',
+				renderTo : Ext.getBody(),
+				handler : function() {
+					openWindow();
+				}
+			})
+		})
+		function openWindow() {
+			win = Ext.create("Ext.window.Window", {
+				title : '레이어윈도우 샘플',
+				height : 500,
+				width : 500
+			});
+			win.show();
+		}
+	</script>
+	</head>
+<body>
+</body>
+</html>
